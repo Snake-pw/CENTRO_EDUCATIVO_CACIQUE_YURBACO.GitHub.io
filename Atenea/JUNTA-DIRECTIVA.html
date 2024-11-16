@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CENTRO EDUCATIVO CACIQUE YURBACO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../img/logo.png" type="image/x-icon"> <!-- Invocación del archivo de favicon -->
+    <style>
+        .acordeon {
+            max-width: 80%;
+            margin: auto;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .acordeon-item {
+            display: flex; /* Utiliza flexbox para alinear los elementos */
+            border-bottom: 1px solid #ccc;
+            padding: 15px; /* Espaciado interno */
+        }
+        .acordeon-title {
+            flex: 1; /* Ocupa espacio a la derecha */
+            background-color: #c26868;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            text-align: right; /* Alinea el texto a la derecha */
+            padding: 10px; /* Espacio alrededor del título */
+        }
+        .acordeon-content {
+            display: none; /* Oculto por defecto */
+            flex: 2; /* Ocupa más espacio a la izquierda */
+            padding: 15px;
+            text-align: justify;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="Logotipo" class="logo"><!-- Invocación del archivo de logo -->
+                </a>
+            </div>
+            <div class="header-text">
+                <h1 class="colegio-nombre">CENTRO EDUCATIVO CACIQUE <br/>YURBACO</h1>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="../Index.html">Inicio</a></li>
+                        <li>
+                            <a href="#">Información Institucional</a>
+                            <ul class="submenu">
+                                <li><a href="Histórica.html">Revisión Histórica</a></li>
+                                <li>
+                                    <a href="#">Principios Corporativos</a>
+                                    <ul class="submenu">
+                                        <li><a href="misión-visión.html">Misión - Visión</a></li>
+                                        <li><a href="Filosofía.html">Filosofía</a></li>
+                                        <li><a href="Modelo.html">Modelo pedagógico</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Equipos de Trabajo</a></li>
+                                <li><a href="JUNTA-DIRECTIVA.html">Junta Directiva</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Mapa.html">Mapa</a></li>
+                        <li><a href="Galeria.php">Galería </a></li>
+                        <li><a href="login.php">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="acordeon">
+            <div class="acordeon-item">
+                <div class="acordeon-title">JUNTA DIRECTIVA 2023</div>
+                <div class="acordeon-content">
+                    <ul>
+                        <li><strong>Rector / Representante Legal:</strong> César Armando Caro Yepes</li>
+                        <li><strong>Directora Académica:</strong> Angélica Castellón Espinosa</li>
+                        <li><strong>Representante de Padres:</strong> Tatiana Padilla, Yeiner Castilla</li>
+                        <li><strong>Sector Productivo:</strong> Jhonatan Herazo</li>
+                        <li><strong>Representante de Ex Alumnos:</strong> Cristian Calle</li>
+                        <li><strong>Representante de Alumnos:</strong> Joel Alcalá</li>
+                        <li><strong>Representantes Docentes:</strong> Yeimis Flórez, Lisbet Taborda</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="acordeon-item">
+                <div class="acordeon-title">JUNTA DIRECTIVA 2024</div>
+                <div class="acordeon-content">
+                    <ul>
+                        <li><strong>Rector / Representante Legal:</strong> César Armando Caro Yepes</li>
+                        <li><strong>Directora Académica:</strong> Angélica Castellón Espinosa</li>
+                        <li><strong>Representante de Padres:</strong> Dora Quintana, Yesenia Correa</li>
+                        <li><strong>Sector Productivo:</strong> Edwin Forero</li>
+                        <li><strong>Representante de Ex Alumnos:</strong> Génesis Loyo</li>
+                        <li><strong>Representante de Alumnos:</strong> Axel Barack López</li>
+                        <li><strong>Representantes Docentes:</strong> Andrea Giraldo, Rosaura Santander</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contactos-footer">
+            <h2>Contactos Institucionales</h2>
+            <p>Dirección: Turbaco, Bolívar Barrio Bellavista diagonal 27 13 104</p>
+            <p>Teléfonos: 3113066848-3114243209</p>
+            <p>Email: centroeducativocaciqueyurbaco@gmail.com</p>
+        </div>
+        <p>&copy; 2024 CENTRO EDUCATIVO CACIQUE YURBACO. Todos los derechos reservados. Diseñado por <span class="diseñado-por">"Snake"</span>.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.acordeon-title').forEach(item => {
+            item.addEventListener('click', () => {
+                const content = item.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
+

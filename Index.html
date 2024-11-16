@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CENTRO EDUCATIVO CACIQUE YURBACO</title>
+    <link rel="stylesheet" href="Atenea/styles.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon"> <!-- Añade esta línea -->
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logotipo" class="logo">
+                </a>
+            </div>
+            <div class="header-text">
+                <h1 class="colegio-nombre">CENTRO EDUCATIVO CACIQUE <br/>YURBACO</h1>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li>
+                            <a href="#">Información Institucional</a>
+                            <ul class="submenu">
+                                <li><a href="Atenea/Histórica.html">Revisión Histórica</a></li>
+                                <li>
+                                    <a href="#">Principios Corporativos</a>
+                                    <ul class="submenu">
+                                        <li><a href="Atenea/misión-visión.html">Misión - Visión</a></li>
+                                        <li><a href="Atenea/Filosofía.html">Filosofía</a></li>
+                                        <li><a href="Atenea/Modelo.html">Modelo pedagógico</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="Atenea/#">Equipos de Trabajo</a></li>
+                                <li><a href="Atenea/JUNTA-DIRECTIVA.html">Junta Directiva</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Atenea/Mapa.html">Mapa</a></li>
+                        <li><a href="Atenea/Galeria.php">Galería </a></li>
+                        <li><a href="Atenea/login.php">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="tarjetas">
+            <div class="tarjeta" id="tarjeta1">
+                <h2>Valores que Transforman</h2>
+                <div class="carousel">
+                    <img src="imagen5.jpg" alt="Imagen 5">
+                    <div>En nuestra Institución Educativa, los valores son fundamentales para fomentar la disciplina y guiar el comportamiento, creando un ambiente propicio para el desarrollo integral de todos.</div>
+                </div>
+            </div>
+            <div class="tarjeta" id="tarjeta2">
+                <div class="carousel">
+                    <img id="imagenCarrusel" src="imagen1.jpg" alt="Imagen 1">
+                    <div id="mensaje">Mensaje 1</div>
+                </div>
+            </div>
+        </div>
+        <div class="iconos">
+            <div class="icono">
+                <div class="icono-circulo">
+                    <a href="Atenea/login.php"><img src="img/estrella.png" alt="Estrella">
+                </div>
+                <div class="icono-nombre">Iniciar sesión</div></a>
+            </div>
+            <div class="icono">
+                <div class="icono-circulo">
+                    <a href="Atenea/Histórica.html"><img src="img/libro.png" alt="Libro">
+                </div>
+                <div class="icono-nombre">Histórica</div></a>
+            </div>
+            <div class="icono">
+                <div class="icono-circulo">
+                    <a href="Atenea/Modelo.html"><img src="img/pluma.png" alt="Pluma">
+                </div>
+                <div class="icono-nombre">Pedagogía</div></a>
+            </div>
+        </div>             
+    </main>
+    <footer>
+        <div class="contactos-footer">
+            <h2>Contactos Institucionales</h2>
+            <p>Dirección: Turbaco, Bolívar Barrio Bellavista diagonal 27 13 104</p>
+            <p>Teléfonos: 3113066848-3114243209</p>
+            <p>Email: centroeducativocaciqueyurbaco@gmail.com</p>
+        </div>
+        <p>&copy; 2024 CENTRO EDUCATIVO CACIQUE YURBACO. Todos los derechos reservados. Diseñado por <span class="diseñado-por">"Snake"</span>.</p>
+    </footer>
+    
+    <script>
+        const imagenes = [
+            { src: 'img/1.png', mensaje: 'Nuestros valores guían la vida y el aprendizaje.' },
+            { src: 'img/2.png', mensaje: 'La disciplina escolar se construye sobre principios sólidos.' },
+            { src: 'img/3.png', mensaje: 'Actitudes positivas para un entorno educativo mejor.' },
+            { src: 'img/4.png', mensaje: 'Cada acción refleja nuestros valores compartidos.' }
+        ];
+
+        let indice = 0;
+        const tiempoCambio = 15000; // 15 segundos
+
+        function cambiarImagen() {
+            const imagen = document.getElementById('imagenCarrusel');
+            const mensaje = document.getElementById('mensaje');
+
+            imagen.src = imagenes[indice].src;
+            mensaje.textContent = imagenes[indice].mensaje;
+
+            indice = (indice + 1) % imagenes.length; // Cambia el índice
+        }
+
+        setInterval(cambiarImagen, tiempoCambio);
+        cambiarImagen(); // Inicializa la primera imagen
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+

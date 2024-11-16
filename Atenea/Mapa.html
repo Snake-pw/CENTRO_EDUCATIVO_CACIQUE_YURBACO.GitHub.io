@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CENTRO EDUCATIVO CACIQUE YURBACO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <style>
+        /* Estilo para asegurarse de que el mapa ocupe toda la pantalla */
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Contenedor del mapa */
+        .map-container {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* 100% de la altura de la pantalla */
+        }
+
+        /* Iframe del mapa */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block; /* Eliminar cualquier espacio en blanco */
+        }
+
+        .route-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .route-link:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="Logotipo" class="logo">
+                </a>
+            </div>
+            <div class="header-text">
+                <h1 class="colegio-nombre">CENTRO EDUCATIVO CACIQUE <br/>YURBACO</h1>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="../Index.html">Inicio</a></li>
+                        <li>
+                            <a href="#">Información Institucional</a>
+                            <ul class="submenu">
+                                <li><a href="Histórica.html">Revisión Histórica</a></li>
+                                <li>
+                                    <a href="#">Principios Corporativos</a>
+                                    <ul class="submenu">
+                                        <li><a href="misión-visión.html">Misión - Visión</a></li>
+                                        <li><a href="Filosofía.html">Filosofía</a></li>
+                                        <li><a href="Modelo.html">Modelo pedagógico</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Equipos de Trabajo</a></li>
+                                <li><a href="JUNTA-DIRECTIVA.html">Junta Directiva</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Galeria.php">Galería </a></li>
+                        <li><a href="login.php">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Contenedor para el mapa -->
+    <div class="map-container">
+        <!-- Agregar un enlace para obtener direcciones -->
+        <a class="route-link" href="https://maps.app.goo.gl/QtRiTkbyApC7Tq8s5" target="_blank">
+            Obtener Ruta
+        </a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.076871398237!2d-75.41202397820942!3d10.33573331710895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef621852927fd23%3A0x73f42bb6ea37faa5!2sCOLEGIO%20CACIQUE%20YURBACO!5e0!3m2!1ses-419!2sco!4v1730847139462!5m2!1ses-419!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer>
+        <div class="contactos-footer">
+            <h2>Contactos Institucionales</h2>
+            <p>Dirección: Turbaco, Bolívar Barrio Bellavista diagonal 27 13 104</p>
+            <p>Teléfonos: 3113066848-3114243209</p>
+            <p>Email: centroeducativocaciqueyurbaco@gmail.com</p>
+        </div>
+        <p>&copy; 2024 CENTRO EDUCATIVO CACIQUE YURBACO. Todos los derechos reservados. Diseñado por <span class="diseñado-por">"Snake"</span>.</p>
+    </footer>
+</body>
+</html>
+
+
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CENTRO EDUCATIVO CACIQUE YURBACO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../img/logo.png" type="image/x-icon"> <!-- Invocación del archivo de favicon -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 200px); /* Ajusta la altura para dejar espacio para header y footer */
+        }
+        .login-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .captcha {
+            margin: 15px 0;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #d32626;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #c02626;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="Logotipo" class="logo"><!-- Invocación del archivo de logo -->
+                </a>
+            </div>
+            <div class="header-text">
+                <h1 class="colegio-nombre">CENTRO EDUCATIVO CACIQUE <br/>YURBACO</h1>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="../Index.html">Inicio</a></li>
+                        <li>
+                            <a href="#">Información Institucional</a>
+                            <ul class="submenu">
+                                <li><a href="Histórica.html">Revisión Histórica</a></li>
+                                <li>
+                                    <a href="#">Principios Corporativos</a>
+                                    <ul class="submenu">
+                                        <li><a href="misión-visión.html">Misión - Visión</a></li>
+                                        <li><a href="Filosofía.html">Filosofía</a></li>
+                                        <li><a href="Modelo.html">Modelo pedagógico</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Equipos de Trabajo</a></li>
+                                <li><a href="JUNTA-DIRECTIVA.html">Junta Directiva</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Mapa.html">Mapa</a></li>
+                        <li><a href="Galeria.php">Galería</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="login-container">
+            <h2>Iniciar Sesión</h2>
+            <form action="#" method="post">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <div class="captcha">
+                    <label>
+                        <input type="checkbox" required> Verificar que eres humano
+                    </label>
+                </div>
+                
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contactos-footer">
+            <h2>Contactos Institucionales</h2>
+            <p>Dirección: Turbaco, Bolívar Barrio Bellavista diagonal 27 13 104</p>
+            <p>Teléfonos: 3113066848-3114243209</p>
+            <p>Email: centroeducativocaciqueyurbaco@gmail.com</p>
+        </div>
+        <p>&copy; 2024 CENTRO EDUCATIVO CACIQUE YURBACO. Todos los derechos reservados. Diseñado por <span class="diseñado-por">"Snake"</span>.</p>
+    </footer>
+</body>
+</html>

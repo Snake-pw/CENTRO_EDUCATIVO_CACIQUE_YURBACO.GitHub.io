@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CENTRO EDUCATIVO CACIQUE YURBACO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../img/logo.png" type="image/x-icon"> <!-- Invocación del archivo de favicon -->
+    <style>
+        .acordeon {
+            max-width: 80%;
+            margin: auto;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .acordeon-item {
+            border-bottom: 1px solid #ccc;
+        }
+        .acordeon-title {
+            background-color: #d45252; /*color de acordion*/
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            font-weight: bold;
+            text-align: center;
+        }
+        .acordeon-content {
+            display: none;
+            padding: 15px;
+            text-align: justify;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="Logotipo" class="logo"><!-- Invocación del archivo de logo -->
+                </a>
+            </div>
+            <div class="header-text">
+                <h1 class="colegio-nombre">CENTRO EDUCATIVO CACIQUE <br/>YURBACO</h1>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="../Index.html">Inicio</a></li>
+                        <li>
+                            <a href="#">Información Institucional</a>
+                            <ul class="submenu">
+                                <li><a href="Histórica.html">Revisión Histórica</a></li>
+                                <li>
+                                    <a href="#">Principios Corporativos</a>
+                                    <ul class="submenu">
+                                        <li><a href="misión-visión.html">Misión - Visión</a></li>
+                                        <li><a href="Filosofía.html">Filosofía</a></li>
+                                        <li><a href="Modelo.html">Modelo pedagógico</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Equipos de Trabajo</a></li>
+                                <li><a href="JUNTA-DIRECTIVA.html">Junta Directiva</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Mapa.html">Mapa</a></li>
+                        <li><a href="Galeria.php">Galería </a></li>
+                        <li><a href="login.php">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="acordeon">
+            <div class="acordeon-item">
+                <div class="acordeon-title">• Misión</div>
+                <div class="acordeon-content">
+                    La institución tiene como misión central generar procesos de competencias en el desarrollo educativo y contribuir a la formación integral de cada educando teniendo en cuenta al hombre como ser diferente y único capaz de expresar sus ideas, pensamientos de manera individual, creativa, trascendental, propiciar el desarrollo armonioso y pleno de todas sus potencialidades, así como formar a hombres y mujeres con habilidades para afrontar su futuro laboral y potencializar sus dimensiones humanas.
+                </div>
+            </div>
+            <div class="acordeon-item">
+                <div class="acordeon-title">• Visión</div>
+                <div class="acordeon-content">
+                    Para 2027 ser una Institución Vanguardista basada en la Pedagogía del Amor y en el desarrollo de las competencias, para que el egresado de esta institución se capacite para ingresar a estudios superiores y/o ser generador de empleo ayudando así a solucionar las necesidades básicas de nuestros compatriotas.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contactos-footer">
+            <h2>Contactos Institucionales</h2>
+            <p>Dirección: Turbaco, Bolívar Barrio Bellavista diagonal 27 13 104</p>
+            <p>Teléfonos: 3113066848-3114243209</p>
+            <p>Email: centroeducativocaciqueyurbaco@gmail.com</p>
+        </div>
+        <p>&copy; 2024 CENTRO EDUCATIVO CACIQUE YURBACO. Todos los derechos reservados. Diseñado por <span class="diseñado-por">"Snake"</span>.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.acordeon-title').forEach(item => {
+            item.addEventListener('click', () => {
+                const content = item.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
